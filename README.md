@@ -28,15 +28,28 @@ $ godaddyddns
     $ python3 -m venv venv
     $ venv/bin/activate
     ```
-1. Install the dependencies
+2. Install the dependencies
     ```shell script
     $ pip install -r requirements.txt
     ```
-2. Configure the program
+3. Configure the program
     ```shell script
     $ python -m godaddy_ddns --configure
     ```
-3. Run for update the hostnames ip with the current ip
+4. Run for update the hostnames ip with the current ip
     ```shell script
     $ python -m godaddy_ddns
+    ```
+### Using docker
+1. Pull godaddy_ddns image
+    ```shell script
+    # docker pull magonx/godaddy_ddns:1.0
+    ```
+2. Configure the hostnames will be updated
+    ```shell script
+    # docker run -v ~:/root -it magonx/godaddy_ddns:1.0 --configure
+    ```
+3. Run
+    ```shell script
+    # docker run -v ~:/root -it magonx/godaddy_ddns:1.0
     ```
