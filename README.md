@@ -1,16 +1,16 @@
 # Godaddy DDNS
 Program for update the hostnames ip on godaddy domains
 
-⚠️ CAUTION ⚠️
+Requeriments:
+* Gradle 8.7
+* GraalVM 21
+
+## ⚠️ CAUTION ⚠️
 
 This might don't work because GoDaddy is limited the API for users that meet the following requeriments.
 
 * Availability API: Limited to accounts with 50 or more domains
 * Management and DNS APIs: Limited to accounts with 10 or more domains and/or an active Discount Domain Club plan.
-
-Requeriments:
-* Gradle 8.7
-* GraalVM 21
 
 ## Build
 Build the native image executable
